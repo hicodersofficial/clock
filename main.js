@@ -19,7 +19,7 @@ const twoDigitNum = (num) => {
   return num;
 };
 
-setInterval(() => {
+function clock() {
   const date = new Date();
   sec = date.getSeconds() * 6;
   if (sec === 0) {
@@ -53,4 +53,6 @@ setInterval(() => {
   digitalHour.innerHTML = twoDigitNum(date.getHours());
   digitalMinute.innerHTML = twoDigitNum(date.getMinutes());
   digitalSecond.innerHTML = twoDigitNum(date.getSeconds());
-}, 1000);
+}
+clock();
+setInterval(clock, 1000);
