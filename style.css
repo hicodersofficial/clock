@@ -93,6 +93,7 @@ section {
   display: flex;
   align-items: center;
   font-size: 3rem;
+  width: 300px;
 }
 
 .digital-time > h2,
